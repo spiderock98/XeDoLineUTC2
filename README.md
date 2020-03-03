@@ -11,6 +11,11 @@
 * Arduino IDE [Windows](https://downloads.arduino.cc/arduino-1.8.12-windows.exe) | [MacOS](https://downloads.arduino.cc/arduino-1.8.12-macosx.zip) | [Linux](https://downloads.arduino.cc/arduino-1.8.12-linux64.tar.xz)
 * Phần mềm giải nén tập tin * *.zip*
 
+## Sơ Đồ Kết Nối Phần Cứng
+
+![schematic1](resources/images/schematic1.jpg)
+![schematic2](resources/images/schematic2.jpg)
+
 ## Cài đặt và thiết lập
 
 1. Khởi động Arduino IDE lần đầu tiên để cài các driver và thư viện cần thiết
