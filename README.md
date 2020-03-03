@@ -1,6 +1,8 @@
 # Xe Dò Line UTC2 -- Đại Học Giao Thông Vận Tải - Phân Hiệu Tại TP.HCM | Mã Tuyển Sinh: GSA
 
-![logo](resources/images/utclogo.ico)
+<p align="center">
+  <img src="resources/images/utclogo.ico">
+</p>
 
 Đi line tự động dùng Arduino Nano kết hợp 5 mắt đọc cảm biến dò line
 
