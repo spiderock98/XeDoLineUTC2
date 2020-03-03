@@ -1,32 +1,33 @@
 # Xe Dò Line UTC2 -- Đại Học Giao Thông Vận Tải - Phân Hiệu Tại TP.HCM | Mã Tuyển Sinh: GSA
 
+![logo](resources/images/utclogo.ico)
+
 Đi line tự động dùng Arduino Nano kết hợp 5 mắt đọc cảm biến dò line
 
-## Getting Started
+## Phần Mềm Cần Thiết
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+* Arduino IDE [Windows](https://downloads.arduino.cc/arduino-1.8.12-windows.exe) | [MacOS](https://downloads.arduino.cc/arduino-1.8.12-macosx.zip) | [Linux](https://downloads.arduino.cc/arduino-1.8.12-linux64.tar.xz)
+* Phần mềm giải nén tập tin * *.zip*
 
-### Phần Mềm Cần Thiết
-
-Arduino IDE [Windows](https://downloads.arduino.cc/arduino-1.8.12-windows.exe) | [MacOS](https://downloads.arduino.cc/arduino-1.8.12-macosx.zip) | [Linux](https://downloads.arduino.cc/arduino-1.8.12-linux64.tar.xz)
-
-### Cài đặt và thiết lập
+## Cài đặt và thiết lập
 
 1. Khởi động Arduino IDE lần đầu tiên để cài các driver và thư viện cần thiết
 
-2. Tải xuống mã nguồn đầy đủ của chương trình ![clone-repo](relative)
+2. Tải xuống mã nguồn đầy đủ của chương trình ![clone-repo](resources/images/clone-repo.png)
 
-3. Giải nén file xxxx.zip vừa tải về
+3. Giải nén file *XeDoLineUTC2-master.zip* vừa tải về
 
-4. Khởi động Arduino IDE chọn *File >> Open* và trỏ đường dẫn đến file .ino trong thư mục xxxx vừa tải xuống
+4. Khởi động Arduino IDE chọn *File >> Open* và trỏ đường dẫn đến file *DoLineADC-final.ino* trong thư mục *XeDoLineUTC2-master* vừa xả nén
 
-5. Chọn board:  *Tools >> Board >> **Arduino Nano***
+5. Tại giao diện phần mềm ArduinoIDE. Chọn board:  *Tools >> Board >> **Arduino Nano***
 
 6. Chọn loại vi xử lý: *Tools >> Processor >> **ATmega328P (Old Bootloader)***
 
-7. Chọn cổng giao tiếp: *Tools >> Port >> COMx*
+7. Chọn cổng giao tiếp: *Tools >> Port >> COMxx* 
 
 8. Nạp chương trình đầu tiên từ PC xuống Arduino: *Sketch >> Upload*
+
+9. Chờ phần mềm báo *Done Uploading* là đã nạp thành công code xuống ArduinoNano
 
 ## Cân Chỉnh 5 Mắt Cảm Biến Dò Line
 
@@ -39,7 +40,7 @@ Do đó chỉ cần thực hiện lại quy trình này khi xe có dấu hiệu 
 * Tắt nguồn động cơ xe
 * Cắm cáp kết nối ArduinoNano và PC
 * Nhấn và giữ nút cân chỉnh - (nút nhấn đặt phía trước cảm biến dò line)
-* *vẫn nhấn giữ nút cân chỉnh* đồng thời nhấn vào biểu tượng kính lúp ![magnify-icon](relative) ở góc trên bên phải phần mềm ArduinoIDE để bật màn hình Serial Monitor
+* *vẫn nhấn giữ nút cân chỉnh* đồng thời nhấn vào biểu tượng kính lúp ![magnify-icon](resources/images/magnify-icon.png) ở góc trên bên phải phần mềm ArduinoIDE để bật màn hình Serial Monitor
 * Thả nút cân chỉnh khi vào đến màn hình **Welcome Screen**
 
 ### Cân chỉnh cảm biến theo sa hình
@@ -60,12 +61,12 @@ void followLine() {
         else if ((port & B00001) == 0) {
           leftScript = 0; // tự động rẽ PHẢI
           onStop();
-          break; // thoát
+          break; // thoát khỏi vòng lặp
         }
         else if ((port & B10000) == 0 ){
           leftScript = 1; // tự động rẽ TRÁI
           onStop();
-          break; // thoát
+          break; // thoát khỏi vòng lặp
         }
     }
 }
