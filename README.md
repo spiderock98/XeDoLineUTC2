@@ -176,7 +176,7 @@ void crossRoad(){
 * **Th.s Võ Thiện Lĩnh**-*Team Leader* - [Facebook](https://www.facebook.com/MR.DUACHUOT)
 * **Th.s Lê Mạnh Tuấn**-*Chuyên gia cố vấn cấp cao* - [Facebook](https://www.facebook.com/leemanhtuan)
 * **Trần Bách Khoa** - [Facebook](https://www.facebook.com/khoa.tranbach.16)
-* **Nguyễn Minh Tiến** - [Facebook](https://www.facebook.com/spiderock98) | [GitHub](https://github.com/spiderock98)
+* **Nguyễn Minh Tiến** - [Facebook](https://www.facebook.com/spiderock98) [GitHub](https://github.com/spiderock98)
 * **Nguyễn Minh Trung** - [Facebook](https://www.facebook.com/trungnguyen239)
 
 ## Ban Tổ Chức
