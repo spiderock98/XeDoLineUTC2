@@ -8,7 +8,7 @@
 
 ## Phần Mềm Cần Thiết
 
-* Arduino IDE [Windows](https://downloads.arduino.cc/arduino-1.8.12-windows.exe) | [MacOS](https://downloads.arduino.cc/arduino-1.8.12-macosx.zip) | [Linux](https://downloads.arduino.cc/arduino-1.8.12-linux64.tar.xz)
+* Arduino IDE | [Windows](https://downloads.arduino.cc/arduino-1.8.12-windows.exe) | [MacOS](https://downloads.arduino.cc/arduino-1.8.12-macosx.zip) | [Linux](https://downloads.arduino.cc/arduino-1.8.12-linux64.tar.xz)
 * Phần mềm giải nén tập tin * *.zip*
 
 ## Sơ Đồ Kết Nối Phần Cứng
@@ -20,7 +20,7 @@
 
 1. Khởi động Arduino IDE lần đầu tiên để cài các driver và thư viện cần thiết
 
-2. Tải xuống mã nguồn đầy đủ của chương trình ![clone-repo](resources/images/clone-repo.png)
+2. Tải xuống mã nguồn đầy đủ của chương trình tại đây [source](https://github.com/spiderock98/XeDoLineUTC2/archive/master.zip) ![clone-repo](resources/images/clone-repo.png)
 
 3. Giải nén file *XeDoLineUTC2-master.zip* vừa tải về
 
