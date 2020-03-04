@@ -24,7 +24,7 @@
 
 3. Giải nén file *XeDoLineUTC2-master.zip* vừa tải về
 
-4. Khởi động Arduino IDE chọn *File >> Open* và trỏ đường dẫn đến file *DoLineADC-final.ino* trong thư mục *XeDoLineUTC2-master* vừa xả nén
+4. Khởi động Arduino IDE chọn *File >> Open* và trỏ đường dẫn đến file *[XeDoLineUTC2-master.ino](XeDoLineUTC2-master.ino)* trong thư mục *XeDoLineUTC2-master* vừa xả nén
 
 5. Tại giao diện phần mềm ArduinoIDE. Chọn board:  *Tools >> Board >> **Arduino Nano***
 
