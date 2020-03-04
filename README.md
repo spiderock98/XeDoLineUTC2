@@ -20,7 +20,7 @@
 
 1. Khởi động Arduino IDE lần đầu tiên để cài các driver và thư viện cần thiết
 
-2. Tải xuống mã nguồn đầy đủ của chương trình tại đây [source](https://github.com/spiderock98/XeDoLineUTC2/archive/master.zip) ![clone-repo](resources/images/clone-repo.png)
+2. Tải xuống mã nguồn đầy đủ của chương trình [tại đây](https://github.com/spiderock98/XeDoLineUTC2/archive/master.zip) ![clone-repo](resources/images/clone-repo.png)
 
 3. Giải nén file *XeDoLineUTC2-master.zip* vừa tải về
 
