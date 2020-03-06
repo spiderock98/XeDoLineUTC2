@@ -13,8 +13,7 @@
 
 ## Sơ Đồ Kết Nối Phần Cứng
 
-![schematic1](resources/images/schematic1.jpg)
-![schematic2](resources/images/schematic2.jpg)
+![schematic](resources/images/schematic.jpg)
 
 ## Sân Thi Đấu
 
