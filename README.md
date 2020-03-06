@@ -15,9 +15,8 @@
 
 ![schematic](resources/images/schematic.jpg)
 
-## Sân Thi Đấu
+## Sân Thi Đấu [Download](resources/docs/SANTHIDAU_2.pdf)
 
-[Download](resources/docs/SANTHIDAU_2.pdf)
 ![sahinh](resources/images/santhidau.png)
 
 ## Cài đặt và thiết lập
