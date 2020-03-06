@@ -16,6 +16,11 @@
 ![schematic1](resources/images/schematic1.jpg)
 ![schematic2](resources/images/schematic2.jpg)
 
+## Sân Thi Đấu
+
+[Download](resources/docs/SANTHIDAU_2.pdf)
+![sahinh](resources/images/santhidau.png)
+
 ## Cài đặt và thiết lập
 
 1. Khởi động Arduino IDE lần đầu tiên để cài các driver và thư viện cần thiết
