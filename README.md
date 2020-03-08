@@ -15,7 +15,7 @@
 
 ![schematic](resources/images/schematic.jpg)
 
-## Sân Thi Đấu. Download | [PDF](resources/docs/SANTHIDAU_2.pdf) | [CorelDRAW](resources/docs/CHINH THUC_SANTHIDAU_2.cdr)
+## Sân Thi Đấu. [PDF](resources/docs/SANTHIDAU_2.pdf) | [CorelDRAW](resources/docs/CHINH THUC_SANTHIDAU_2.cdr)
 
 ![sahinh](resources/images/santhidau.jpg)
 
