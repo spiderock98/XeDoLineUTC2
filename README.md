@@ -163,6 +163,7 @@ void crossRoad(){
 * 2 động cơ xoay đến khi **S3** vào line trắng
 
 ```
+Kịch bản mẫu cho ĐỘI XANH
 followLine();
 turnLeft();
 followLine();
@@ -171,7 +172,6 @@ followLine();
 turnLeft();
 followLine();
 ```
-#### Kịch bản mẫu cho ĐỘI XANH
 
 
 ## Built With
@@ -183,9 +183,9 @@ followLine();
 
 * **Th.s Võ Thiện Lĩnh**-*Team Leader* - [Facebook](https://www.facebook.com/MR.DUACHUOT)
 * **Th.s Lê Mạnh Tuấn**-*Chuyên gia cố vấn cấp cao* - [Facebook](https://www.facebook.com/leemanhtuan)
-* **Trần Bách Khoa** - [Facebook](https://www.facebook.com/khoa.tranbach.16)
-* **Nguyễn Minh Tiến** - [Facebook](https://www.facebook.com/spiderock98) [GitHub](https://github.com/spiderock98)
-* **Nguyễn Minh Trung** - [Facebook](https://www.facebook.com/trungnguyen239)
+* **Trần Bách Khoa** - [Facebook](https://www.facebook.com/khoa.tranbach.16) [Email](5751062034@st.utc2.edu.vn)
+* **Nguyễn Minh Tiến** - [Facebook](https://www.facebook.com/spiderock98) [Email](5751062057@st.utc2.edu.vn) [GitHub](https://github.com/spiderock98)
+* **Nguyễn Minh Trung** - [Facebook](https://www.facebook.com/trungnguyen239) [Email](5751062061@st.utc2.edu.vn)
 
 ## Ban Tổ Chức
 **Trường Đại học Giao Thông Vận Tải - Phân hiệu tại TP. Hồ Chí Minh** | **Mã tuyển sinh: GSA**
