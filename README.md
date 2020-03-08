@@ -4,8 +4,6 @@
   <img src="resources/images/utclogo.ico">
 </p>
 
-Đi line tự động dùng Arduino Nano kết hợp 5 mắt đọc cảm biến dò line
-
 ## Phần Mềm Cần Thiết
 
 * Arduino IDE | [Windows](https://downloads.arduino.cc/arduino-1.8.12-windows.exe) | [MacOS](https://downloads.arduino.cc/arduino-1.8.12-macosx.zip) | [Linux](https://downloads.arduino.cc/arduino-1.8.12-linux64.tar.xz)
