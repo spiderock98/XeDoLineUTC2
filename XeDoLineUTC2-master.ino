@@ -144,8 +144,7 @@ void setup()
   for (byte i = 0; i < 10; i += 2)
     Serial.println(EEPROMReadInt(i));
 
-  while (!digitalRead(ledStart))
-    ; // waiting for start signal IRLed
+  while (!digitalRead(ledStart)); // waiting for start signal IRLed
 
   // danh sách các kịch bản để xe đi hết sa hình
   followLine();

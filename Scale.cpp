@@ -40,7 +40,7 @@ void scaleMode(){
         delay(500);
         Serial.println("*                                *");
         delay(500);
-        Serial.println("*    !!! Release Scale Button    *");
+        Serial.println("*     !!! Thả Nút Cân Chỉnh      *");
         delay(500);
         Serial.println("*          SCALING MODE          *");
         delay(500);

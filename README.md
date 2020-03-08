@@ -1,4 +1,4 @@
-# Xe Dò Line UTC2 -- Đại Học Giao Thông Vận Tải - Phân Hiệu Tại TP.HCM | Mã Tuyển Sinh: GSA
+# Xe Dò Line UTC2 - Đại Học Giao Thông Vận Tải - Phân Hiệu Tại TP.HCM | Mã Tuyển Sinh: GSA
 
 <p align="center">
   <img src="resources/images/utclogo.ico">
@@ -27,15 +27,17 @@
 
 4. Khởi động Arduino IDE chọn *File >> Open* và trỏ đường dẫn đến file *[XeDoLineUTC2-master.ino](XeDoLineUTC2-master.ino)* trong thư mục *XeDoLineUTC2-master* vừa xả nén
 
-5. Tại giao diện phần mềm ArduinoIDE. Chọn board:  *Tools >> Board >> **Arduino Nano***
+5. Cắm cáp kết nối ArduinoNano và PC
 
-6. Chọn loại vi xử lý: *Tools >> Processor >> **ATmega328P (Old Bootloader)***
+6. Tại giao diện phần mềm ArduinoIDE. Chọn board:  *Tools >> Board >> **Arduino Nano***
 
-7. Chọn cổng giao tiếp: *Tools >> Port >> COMxx* 
+7. Chọn loại vi xử lý: *Tools >> Processor >> **ATmega328P (Old Bootloader)***
 
-8. Nạp chương trình đầu tiên từ PC xuống Arduino: *Sketch >> Upload*
+8. Chọn cổng giao tiếp: *Tools >> Port >> COMxx* 
 
-9. Chờ phần mềm báo *Done Uploading* là đã nạp thành công code xuống ArduinoNano
+9. Nạp chương trình đầu tiên từ PC xuống Arduino: *Sketch >> Upload*
+
+10. Chờ phần mềm báo *Done Uploading* là đã nạp thành công code xuống ArduinoNano
 
 ## Cân Chỉnh 5 Mắt Cảm Biến Dò Line
 
@@ -48,13 +50,14 @@ Do đó chỉ cần thực hiện lại quy trình này khi xe có dấu hiệu 
 * Tắt nguồn động cơ xe
 * Cắm cáp kết nối ArduinoNano và PC
 * Nhấn và giữ nút cân chỉnh - (nút nhấn đặt phía trước cảm biến dò line)
-* *vẫn nhấn giữ nút cân chỉnh* đồng thời nhấn vào biểu tượng kính lúp ![magnify-icon](resources/images/magnify-icon.png) ở góc trên bên phải phần mềm ArduinoIDE để bật màn hình Serial Monitor
+* *Vẫn nhấn giữ nút cân chỉnh* đồng thời nhấn vào biểu tượng kính lúp ![magnify-icon](resources/images/magnify-icon.png) ở góc trên bên phải phần mềm ArduinoIDE để bật màn hình Serial Monitor
 * Thả nút cân chỉnh khi vào đến màn hình **Welcome Screen**
 
 ### Cân chỉnh cảm biến theo sa hình
+* Đặt xe vào sa hình
 * Quan sát Serial Monitor và làm theo hướng dẫn
-* Khi đạt được giá trị cảm biến ổn định thì nhấn giữ nút cân chỉnh để xác nhận
-* Tiếp tục cân cho đến hết S5
+* Khi đạt được giá trị cảm biến ổn định thì *nhấn giữ nút cân chỉnh để xác nhận*
+* Tiếp tục cân chỉnh cho đến hết cảm biến S5
 * Rút cáp kết nối
 
 ### Giải Thích Các Hàm
@@ -62,16 +65,12 @@ Do đó chỉ cần thực hiện lại quy trình này khi xe có dấu hiệu 
 void followLine() {
     while (1) {
         ...
-        else if (port == 0) {
-          onStop();
-          break;
-        }
-        else if ((port & B00001) == 0) {
+        else if ((port & B00001) == 0) { // S5 rơi vào line trắng
           leftScript = 0; // tự động rẽ PHẢI
           onStop();
           break; // thoát khỏi vòng lặp
         }
-        else if ((port & B10000) == 0 ){
+        else if ((port & B10000) == 0 ){ // S1 rơi vào line trắng
           leftScript = 1; // tự động rẽ TRÁI
           onStop();
           break; // thoát khỏi vòng lặp
@@ -80,59 +79,56 @@ void followLine() {
 }
 ```
 #### Hàm đi line
-* vòng lặp vô tận (infinity loop)
+* gần như xuyên suốt trong chương trình chính
+* chương trình chạy vòng lặp
 * liên tục bắt các sự kiện để dò theo line
-#### Điều kiện thoát - `break`
+#### Điều kiện thoát vòng lặp - `break`
 * **S1** hoặc **S5** nằm trên line trắng. Không quan tâm **S2 S3 S4**
 * trước khi thoát kéo cờ `leftScript` lên `0` hoặc `1` để xe tự phân biệt đội A hay đội B
 
 ```
-if (port==B10111)
-    onLeft1();
+if (port==B10111){
+  analogWrite(leftmotor, 40);
+  analogWrite(rightmotor, 90);
+}
 ```
 ##### Sự kiện
 * đánh lái sang **PHẢI**
 * khi **S2** nằm trên line trắng (lệch **TRÁI**)
 * đồng thời **S1 S3 S4 S5** nằm trên line đen
-##### Điều kiện thoát
-* **S2** không còn nằm trên line trắng
-* Gặp các điều kiện khác trong `followLine(){ ... }`
 
 ```
-if (port==B11101)
-    onRight1();
+if (port==B11101){
+  analogWrite(rightmotor, 40);
+  analogWrite(leftmotor, 90);
+}
 ```
 ##### Sự kiện
 * đánh lái sang **TRÁI**
 * khi **S4** nằm trên line trắng (lệch **PHẢI**)
 * đồng thời **S1 S2 S3 S5** nằm trên line đen
-##### Điều kiện thoát
-* **S4** không còn nằm trên line trắng
-* Gặp các điều kiện khác trong `followLine(){ ... }`
 
 ```
-if ((port==B11011) || (port==B11111))
-    onStraight();
+if (port==B11011)
+  analogWrite(rightmotor, 50);
+  analogWrite(leftmotor, 50);
 ```
 ##### Sự kiện
 * đi **THẲNG** bằng cách cân bằng 2 động cơ
 * khi **S3** nằm trên line trắng. Đồng thời **S1 S2 S4 S5** nằm trên line đen
 * khi cả 5 cảm biến cùng nằm trên line đen (nhiễu các trường hợp đặc biệt)
-##### Điều kiện thoát
-* Gặp các điều kiện khác trong `followLine(){ ... }`
 
 ```
 void turnLeft(){
   while ((adc2port() & B00010) != 0){
-    analogWrite(rightmotor, defaultValue-5);
+    analogWrite(rightmotor, 50);
     digitalWrite(leftmotor, 0);
   }
-  onStop();
 }
 ```
 #### Hàm xử lý ngã ba (rẽ trái)
-* vòng lặp vô tận (infinity loop)
 * động cơ trái dừng, động cơ phải hoạt động
+* chương trình chạy vòng lặp
 #### Điều kiện thoát vòng lặp - `break`
 * động cơ quay đến khi **S4** nằm trong line trắng thì thoát
 * sau đó dừng hẳn 2 động cơ `onStop();` 
@@ -140,15 +136,14 @@ void turnLeft(){
 ```
 void turnRight(){
   while ((adc2port() & B01000) != 0){
-    analogWrite(leftmotor, defaultValue-5);
+    analogWrite(leftmotor, 50);
     digitalWrite(rightmotor, 0);
   }
-  onStop();
 }
 ```
 #### Hàm xử lý ngã ba (rẽ phải)
-* vòng lặp vô tận (infinity loop)
 * động cơ phải dừng, động cơ trái hoạt động
+* chương trình chạy vòng lặp
 #### Điều kiện thoát vòng lặp - `break`
 * động cơ quay đến khi **S2** nằm trong line trắng thì thoát
 * sau đó dừng hẳn 2 động cơ `onStop();` 
@@ -156,16 +151,28 @@ void turnRight(){
 ```
 void crossRoad(){
   do {
-    onStraight();
-    delay(2);
-  } while (((adc2port() == B11011) || (adc2port() == B10111) || (adc2port() == B11101)) == false);
+    analogWrite(rightmotor, 50);
+    analogWrite(leftmotor, 50);
+  } while (adc2port() != B11011);
 }
 ```
 #### Hàm xử lý ngã tư
-* vòng lặp vô tận (infinity loop)
 * 2 động cơ quay đều `onStraight();`
+* chương trình chạy vòng lặp
 #### Điều kiện thoát vòng lặp - `break`
-* 2 động cơ xoay đến khi gặp một trong ba trường hợp | **S3** vào line trắng hoặc **S2** vào line trắng hoặc **S4** vào line trắng
+* 2 động cơ xoay đến khi **S3** vào line trắng
+
+```
+followLine();
+turnLeft();
+followLine();
+crossRoad();
+followLine();
+turnLeft();
+followLine();
+```
+#### Kịch bản mẫu cho ĐỘI XANH
+
 
 ## Built With
 
