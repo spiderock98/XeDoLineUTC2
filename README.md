@@ -94,8 +94,8 @@ if (port==B10111){
 }
 ```
 ##### Sự kiện
-* đánh lái sang **PHẢI**
-* khi **S2** nằm trên line trắng (lệch **TRÁI**)
+* đánh lái sang **TRÁI**
+* khi **S2** nằm trên line trắng (lệch **PHẢI**)
 * đồng thời **S1 S3 S4 S5** nằm trên line đen
 
 ```
@@ -105,8 +105,8 @@ if (port==B11101){
 }
 ```
 ##### Sự kiện
-* đánh lái sang **TRÁI**
-* khi **S4** nằm trên line trắng (lệch **PHẢI**)
+* đánh lái sang **PHẢI**
+* khi **S4** nằm trên line trắng (lệch **TRÁI**)
 * đồng thời **S1 S2 S3 S5** nằm trên line đen
 
 ```
@@ -117,7 +117,6 @@ if (port==B11011)
 ##### Sự kiện
 * đi **THẲNG** bằng cách cân bằng 2 động cơ
 * khi **S3** nằm trên line trắng. Đồng thời **S1 S2 S4 S5** nằm trên line đen
-* khi cả 5 cảm biến cùng nằm trên line đen (nhiễu các trường hợp đặc biệt)
 
 ```
 void turnLeft(){
@@ -125,13 +124,14 @@ void turnLeft(){
     analogWrite(rightmotor, 50);
     digitalWrite(leftmotor, 0);
   }
+  onStop();
 }
 ```
 #### Hàm xử lý ngã ba (rẽ trái)
 * động cơ trái dừng, động cơ phải hoạt động
 * chương trình chạy vòng lặp
 #### Điều kiện thoát vòng lặp - `break`
-* động cơ quay đến khi **S4** nằm trong line trắng thì thoát
+* động cơ quay đến khi **S4** nằm trong line trắng thì thoát. Không quan tâm **S1 S2 S3 S5**
 * sau đó dừng hẳn 2 động cơ `onStop();` 
 
 ```
@@ -140,13 +140,14 @@ void turnRight(){
     analogWrite(leftmotor, 50);
     digitalWrite(rightmotor, 0);
   }
+  onStop();
 }
 ```
 #### Hàm xử lý ngã ba (rẽ phải)
 * động cơ phải dừng, động cơ trái hoạt động
 * chương trình chạy vòng lặp
 #### Điều kiện thoát vòng lặp - `break`
-* động cơ quay đến khi **S2** nằm trong line trắng thì thoát
+* động cơ quay đến khi **S2** nằm trong line trắng thì thoát. Không quan tâm **S1 S3 S4 S5**
 * sau đó dừng hẳn 2 động cơ `onStop();` 
 
 ```
@@ -161,7 +162,7 @@ void crossRoad(){
 * 2 động cơ quay đều `onStraight();`
 * chương trình chạy vòng lặp
 #### Điều kiện thoát vòng lặp - `break`
-* 2 động cơ xoay đến khi **S3** vào line trắng
+* 2 động cơ xoay đến khi **S3** vào line trắng. Đồng thời **S1 S2 S4 S5** nằm trên line đen
 
 ```
 Kịch bản mẫu cho ĐỘI XANH
