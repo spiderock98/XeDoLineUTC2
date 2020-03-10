@@ -11,7 +11,7 @@
 unsigned int finalResult[5];
 
 ////////////// thay đổi 4 thông số sau để cải thiện tốc độ động cơ //////////////
-const int defaultValue = 50;                                                   //
+const int defaultValue = 60;                                                   //
 const int plusLevel1 = 90;                                                     //
 const int plusLevel2 = 100;                                                    //
 const int minusLevel1 = 40;                                                    //
@@ -93,10 +93,11 @@ void crossRoad()
 // hàm dò line và cân bằng xe theo line dựa trên các sự kiện thu được từ 5 cảm biến
 void followLine()
 {
+  byte port;
   while (1)
   {
     //  -> 0 LINE Trang       -> 1 LINE Den //
-    byte port = adc2port();
+    port = adc2port();
 
     if (port == B10111)
       onLeft1();
@@ -105,11 +106,6 @@ void followLine()
     else if (port == B11101)
       onRight1();
 
-    else if (port == 0)
-    {
-      onStop();
-      break;
-    }
     else if ((port & B00001) == 0)
     {
       leftScript = 0; // tự động rẽ PHẢI

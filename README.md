@@ -38,6 +38,7 @@
 9. Nạp chương trình đầu tiên từ PC xuống Arduino: *Sketch >> Upload*
 
 10. Chờ phần mềm báo *Done Uploading* là đã nạp thành công code xuống ArduinoNano
+![done-uploading](resources/images/done-upload.png)
 
 ## Cân Chỉnh 5 Mắt Cảm Biến Dò Line
 
