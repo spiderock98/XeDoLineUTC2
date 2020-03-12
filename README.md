@@ -54,8 +54,8 @@ Do đó chỉ cần thực hiện lại quy trình này khi xe có dấu hiệu 
 * *Vẫn nhấn giữ nút cân chỉnh* đồng thời nhấn vào biểu tượng kính lúp ![magnify-icon](resources/images/magnify-icon.png) ở góc trên bên phải phần mềm ArduinoIDE để bật màn hình Serial Monitor
 * Thả nút cân chỉnh khi vào đến màn hình **Welcome Screen**
 
-### Cân chỉnh cảm biến theo sa hình
-* Đặt xe vào sa hình
+### Cân chỉnh cảm biến theo sân thi đấu
+* Đặt xe vào sân thi đấu
 * Quan sát Serial Monitor và làm theo hướng dẫn
 * Khi đạt được giá trị cảm biến ổn định thì *nhấn giữ nút cân chỉnh để xác nhận*
 * Tiếp tục cân chỉnh cho đến hết cảm biến S5
