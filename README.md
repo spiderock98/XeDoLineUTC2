@@ -174,14 +174,16 @@ followLine();
 turnLeft();
 followLine();
 ```
+## Video Hướng Dẫn
 
+<iframe width="640" height="360" src="https://www.youtube.com/embed/Fn5SZk5CloU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Built With
 
-* [Arduino Nano](https://store.arduino.cc/usa/arduino-nano) - Main dev hardware
-* [Arduino IDE](https://www.arduino.cc/reference/en/) - The compiler for Arduino Nano board
+* [Arduino Nano](https://store.arduino.cc/usa/arduino-nano) - Main Dev Hardware
+* [Arduino IDE](https://www.arduino.cc/reference/en/) - The compiler for Arduino Nano
 
-## Nhóm Tác Giả
+## Contributors
 
 * **Th.s Võ Thiện Lĩnh**-*Team Leader* - [Facebook](https://www.facebook.com/MR.DUACHUOT)
 * **Th.s Lê Mạnh Tuấn**-*Chuyên gia cố vấn cấp cao* - [Facebook](https://www.facebook.com/leemanhtuan)
