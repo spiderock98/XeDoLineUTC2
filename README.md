@@ -61,7 +61,15 @@ Do đó chỉ cần thực hiện lại quy trình này khi xe có dấu hiệu 
 * Tiếp tục cân chỉnh cho đến hết cảm biến S5
 * Rút cáp kết nối
 
-### Giải Thích Các Hàm
+## FAQs - LƯU Ý QUAN TRỌNG NÈ
+
+* KHÔNG ĐƯỢC PHÉP LẮP NGƯỢC CỰC DƯƠNG(+) ÂM(-) CỦA PIN VÀO MẠCH SẠC CŨNG NHƯ MẠCH ĐỘNG CƠ
+* PIN NẾU CẮM NGƯỢC CỰC NGAY CẢ KHI CHƯA BẬT NGUỒN CŨNG SẼ GÂY CHÁY NỔ
+* SỐ LƯỢNG PIN CÓ HẠN
+* Nếu cắm cáp kết nối Arduino sáng đèn nguồn nhưng không tìm thấy port trong *Tools >> Port >> COMxx* thì tải xuống và cài đặt [Driver mạch nạp CH340C](https://sparks.gogo.co.nz/assets/_site_/downloads/CH34x_Install_Windows_v3_4.zip)
+* Nếu cảm biến dò line khi lắp vào có dấu hiệu cong vênh thì dùng kìm bấm linh kiện bấm sát các mối hàn và mắt đọc
+
+## Giải Thích Các Hàm
 ```
 void followLine() {
     while (1) {
@@ -174,6 +182,7 @@ followLine();
 turnLeft();
 followLine();
 ```
+
 ## Video Hướng Dẫn
 
 <iframe width="640" height="360" src="https://www.youtube.com/embed/Fn5SZk5CloU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -187,6 +196,7 @@ followLine();
 
 * **Th.s Võ Thiện Lĩnh**-*Team Leader* - [Facebook](https://www.facebook.com/MR.DUACHUOT)
 * **Th.s Lê Mạnh Tuấn**-*Chuyên gia cố vấn cấp cao* - [Facebook](https://www.facebook.com/leemanhtuan)
+* **Bùi Đình Trung**-*Diễn giả cô đơn* - [Facebook](https://www.facebook.com/park.buitrung) [Email](mailto:5751062060@st.utc2.edu.vn)
 * **Trần Bách Khoa** - [Facebook](https://www.facebook.com/khoa.tranbach.16) [Email](mailto:5751062034@st.utc2.edu.vn)
 * **Nguyễn Minh Tiến** - [Facebook](https://www.facebook.com/spiderock98) [Email](mailto:5751062057@st.utc2.edu.vn) [GitHub](https://github.com/spiderock98)
 * **Nguyễn Minh Trung** - [Facebook](https://www.facebook.com/trungnguyen239) [Email](mailto:5751062061@st.utc2.edu.vn)
