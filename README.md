@@ -13,7 +13,8 @@
 
 ![schematic](resources/images/schematic.jpg)
 
-## Sân Thi Đấu. [PDF](resources/docs/SANTHIDAU_2.pdf) | [CorelDRAW](resources/docs/CHINHTHUC_SANTHIDAU_2.cdr)
+## Sân Thi Đấu [PDF](resources/docs/SANTHIDAU_2.pdf) | [CorelDRAW](resources/docs/CHINHTHUC_SANTHIDAU_2.cdr)
+**Lưu ý khi in lại sân phải giữ đúng tỉ lệ file gốc**
 
 ![sahinh](resources/images/santhidau.jpg)
 
