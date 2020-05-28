@@ -186,9 +186,9 @@ followLine();
 ## Video Hướng Dẫn
 
 ### Giới thiệu và hướng dẫn lắp ráp phần cứng
-<iframe width="640" height="360" src="https://www.youtube.com/embed/Fn5SZk5CloU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe align="center" width="640" height="360" src="https://www.youtube.com/embed/Fn5SZk5CloU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 ### Hướng dẫn cân chỉnh cảm biến
-<iframe width="640" height="360" src="https://www.youtube.com/embed/g5Q_PcXfzVs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe align="center" width="640" height="360" src="https://www.youtube.com/embed/3UzgURIa8rw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Built With
 
