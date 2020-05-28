@@ -15,4 +15,5 @@ int EEPROMReadInt(int address)
   long one = EEPROM.read(address + 1);
 
   return ((two << 0) & 0xFFFFFF) + ((one << 8) & 0xFFFFFFFF);
+  //return (one << 8) | two;
 }

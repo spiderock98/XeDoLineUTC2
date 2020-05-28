@@ -16,8 +16,6 @@
 ## Sân Thi Đấu [PDF](resources/docs/SANTHIDAU_2.pdf) | [CorelDRAW](resources/docs/CHINHTHUC_SANTHIDAU_2.cdr)
 **Lưu ý khi in lại sân phải giữ đúng tỉ lệ file gốc**
 
-![sahinh](resources/images/santhidau.jpg)
-
 ## Cài đặt và thiết lập
 
 1. Khởi động Arduino IDE lần đầu tiên để cài các driver và thư viện cần thiết
@@ -187,7 +185,10 @@ followLine();
 
 ## Video Hướng Dẫn
 
+### Giới thiệu và hướng dẫn lắp ráp phần cứng
 <iframe width="640" height="360" src="https://www.youtube.com/embed/Fn5SZk5CloU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+### Hướng dẫn cân chỉnh cảm biến
+<iframe width="640" height="360" src="https://www.youtube.com/embed/g5Q_PcXfzVs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Built With
 
@@ -198,7 +199,7 @@ followLine();
 
 * **Th.s Võ Thiện Lĩnh**-*Team Leader* - [Facebook](https://www.facebook.com/MR.DUACHUOT)
 * **Th.s Lê Mạnh Tuấn**-*Chuyên gia cố vấn cấp cao* - [Facebook](https://www.facebook.com/leemanhtuan)
-* **Bùi Đình Trung**-*Diễn giả cô đơn* - [Facebook](https://www.facebook.com/park.buitrung) [Email](mailto:5751062060@st.utc2.edu.vn)
+* **Bùi Đình Trung** - [Facebook](https://www.facebook.com/park.buitrung) [Email](mailto:5751062060@st.utc2.edu.vn)
 * **Trần Bách Khoa** - [Facebook](https://www.facebook.com/khoa.tranbach.16) [Email](mailto:5751062034@st.utc2.edu.vn)
 * **Nguyễn Minh Tiến** - [Facebook](https://www.facebook.com/spiderock98) [Email](mailto:5751062057@st.utc2.edu.vn) [GitHub](https://github.com/spiderock98)
 * **Nguyễn Minh Trung** - [Facebook](https://www.facebook.com/trungnguyen239) [Email](mailto:5751062061@st.utc2.edu.vn)
