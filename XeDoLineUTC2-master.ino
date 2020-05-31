@@ -11,10 +11,10 @@
 unsigned int finalResult[5];
 
 ////////////// thay đổi 4 thông số sau để cải thiện tốc độ động cơ //////////////
-const int defaultValue = 60;                                                   //
-const int plusLevel1 = 90;                                                     //
-const int plusLevel2 = 100;                                                    //
-const int minusLevel1 = 40;                                                    //
+const int defaultValue = 60; //
+const int plusLevel1 = 90;   //
+const int plusLevel2 = 100;  //
+const int minusLevel1 = 40;  //
 //////////////////////////////////////////////////// ////////////////////////////
 
 // biến dùng để tự động chọn chương trình rẽ TRÁI/PHẢI tuỳ theo sa hình
@@ -124,7 +124,7 @@ void followLine()
 // hàm MAIN(): toàn bộ chương trình bắt đầu từ đây
 void setup()
 {
-  Serial.begin(115200);
+  Serial.begin(9600);
   pinMode(btnScale, INPUT_PULLUP);
   pinMode(ledStart, INPUT);
   pinMode(rightmotor, OUTPUT);
