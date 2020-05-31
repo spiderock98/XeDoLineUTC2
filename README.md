@@ -68,7 +68,7 @@ Do đó chỉ cần thực hiện lại quy trình này khi xe có dấu hiệu 
 * Nếu cắm cáp kết nối Arduino sáng đèn nguồn nhưng không tìm thấy port trong *Tools >> Port >> COMxx* thì tải xuống và cài đặt [Driver mạch nạp CH340C](https://sparks.gogo.co.nz/assets/_site_/downloads/CH34x_Install_Windows_v3_4.zip)
 * Nếu cảm biến dò line khi lắp vào có dấu hiệu cong vênh thì dùng kìm bấm linh kiện bấm sát các mối hàn và mắt đọc
 * Nếu gặp tình trạng Serial Monitor nhảy ký tự linh tinh ![error2](resources/images/err2.png)
-thì chỉnh lại **baudrate ở góc phải bên dưới thành 9600** [error3](resources/images/err3.png)
+thì chỉnh lại **baudrate ở góc phải bên dưới thành 9600** ![error3](resources/images/err3.png)
 * Trong quá trình UPLOAD nếu ArduinoIDE ném ra lỗi *An error occureed uploading the sketch* thì chọn *Tools >> Verify/Compile* **NHIỀU LẦN** cho đến khi hết lỗi ![error1](resources/images/error1.jpg)
 
 ## Giải Thích Các Hàm
