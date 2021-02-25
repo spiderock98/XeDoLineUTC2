@@ -188,9 +188,10 @@ followLine();
 ## Video Hướng Dẫn
 
 ### Giới thiệu và hướng dẫn lắp ráp phần cứng
-<iframe align="center" width="640" height="360" src="https://www.youtube.com/embed/Fn5SZk5CloU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+[<img title="" src="http://img.youtube.com/vi/Fn5SZk5CloU/0.jpg" alt="demo2" data-align="center">](http://www.youtube.com/watch?v=Fn5SZk5CloU "Demo 17/04/2020")
+
 ### Hướng dẫn cân chỉnh cảm biến
-<iframe align="center" width="640" height="360" src="https://www.youtube.com/embed/3UzgURIa8rw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+[<img title="" src="http://img.youtube.com/vi/3UzgURIa8rw/0.jpg" alt="demo2" data-align="center">](http://www.youtube.com/watch?v=3UzgURIa8rw "Demo 17/04/2020")
 
 ## Một số hình ảnh cuộc thi sáng 07/06/2020
 
