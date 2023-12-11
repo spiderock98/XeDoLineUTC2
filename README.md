@@ -239,10 +239,10 @@ followLine();
 
 ## Contributors
 
-* **Th.s Võ Thiện Lĩnh**-*Team Leader* - [Facebook](https://www.facebook.com/MR.DUACHUOT)
-* **Th.s Lê Mạnh Tuấn**-*Chuyên gia cố vấn cấp cao* - [Facebook](https://www.facebook.com/leemanhtuan)
+* **Th.s Võ Thiện Lĩnh** - *Project Leader* - [Facebook](https://www.facebook.com/MR.DUACHUOT)
+* **Th.s Lê Mạnh Tuấn** - *Chuyên gia cố vấn cấp cao* - [Facebook](https://www.facebook.com/leemanhtuan)
 * **Bùi Đình Trung** - [Facebook](https://www.facebook.com/park.buitrung) [Email](mailto:5751062060@st.utc2.edu.vn)
-* **Trần Bách Khoa** - [Facebook](https://www.facebook.com/khoa.tranbach.16) [Email](mailto:5751062034@st.utc2.edu.vn)
+* **Trần Bách Khoa** - We missed you BRO - [Facebook](https://www.facebook.com/khoa.tranbach.16) [Email](mailto:5751062034@st.utc2.edu.vn)
 * **Nguyễn Minh Tiến** - [Facebook](https://www.facebook.com/spiderock98) | [Telegram](https://t.me/spiderock98) | [Instagram](https://www.instagram.com/spiderock98/) | [YouTube](https://www.youtube.com/channel/UCKtd98ra9ovo2HW4_UFC9Cw/videos)
 * **Nguyễn Minh Trung** - [Facebook](https://www.facebook.com/trungnguyen239) [Email](mailto:5751062061@st.utc2.edu.vn)
 
